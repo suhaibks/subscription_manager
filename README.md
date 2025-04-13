@@ -79,7 +79,25 @@ CREATE TABLE subscriptions (
 ---
 
 ## ✨ Screenshots
-> _Optional: Add screenshots for login, dashboard, calendar, analysis, etc._
+
+1. **Signup**
+![signup](https://github.com/user-attachments/assets/8d289685-42b5-47ab-becb-c1392c3fd4e0)
+
+2. **Login**
+![login](https://github.com/user-attachments/assets/f15b979f-7596-425d-a3d8-7dca4885efce)
+
+3. **Home**
+![home](https://github.com/user-attachments/assets/ea7f8f8e-687b-4b17-9f13-ad30418b316b)
+
+4. **Calendar**
+![calendar](https://github.com/user-attachments/assets/7fb61f60-1101-4446-a024-f34ec8918eca)
+
+5. **Analysis**
+![analysis](https://github.com/user-attachments/assets/eaf8d3b5-e07c-42f6-b9ad-ae96d2e9f680)
+
+6. **About**
+![about](https://github.com/user-attachments/assets/d90c6719-14da-43e1-8b7e-b325ad948729)
+
 
 ---
 
