@@ -27,6 +27,9 @@
 
 ## 📁 Folder Structure
 
+
+![folderstructure](https://github.com/user-attachments/assets/8a6bb38c-92e1-4f95-949d-3b162da93ad9)
+
 📦 your-project-folder/
 ├── assets/
 │   ├── css/style.css
