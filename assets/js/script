@@ -1,0 +1,125 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // --- Show Password Toggle (Login & Signup) ---
+  const showPassword = document.getElementById("showPassword");
+  const passwordInput = document.getElementById("password");
+
+  if (showPassword && passwordInput) {
+    showPassword.addEventListener("change", function () {
+      passwordInput.type = this.checked ? "text" : "password";
+    });
+  }
+
+  // --- Profile Icon Dropdown ---
+  const profileIcon = document.getElementById("profileIcon");
+  if (profileIcon) {
+    profileIcon.addEventListener("click", function () {
+      const dropdown = this.parentElement.querySelector(".profile-dropdown");
+      if (dropdown) {
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+      }
+    });
+  }
+
+  // --- Calendar Functionality ---
+  if (document.getElementById("calendar")) {
+    const calendarEl = document.getElementById("calendar");
+    const daySelect = document.getElementById("daySelect");
+    const subList = document.getElementById("subList");
+    const todayBtn = document.getElementById("todayBtn");
+
+    const today = new Date();
+    let currentMonth = today.getMonth();
+    let currentYear = today.getFullYear();
+
+    // Sample data structure: [{ date: "2025-04-12", name: "Netflix" }]
+    const subscriptions = window.subscriptions || [];
+
+    function buildCalendar(month, year) {
+      calendarEl.innerHTML = "";
+      daySelect.innerHTML = "";
+
+      const firstDay = new Date(year, month, 1).getDay(); // 0 = Sunday
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      // Blank cells for alignment
+      for (let i = 0; i < firstDay; i++) {
+        const empty = document.createElement("div");
+        calendarEl.appendChild(empty);
+      }
+
+      for (let d = 1; d <= daysInMonth; d++) {
+        const cell = document.createElement("div");
+        cell.classList.add("calendar-day");
+        cell.textContent = d;
+
+        const cellDate = new Date(year, month, d);
+        const cellDateStr = cellDate.toISOString().split("T")[0];
+
+        // Highlight today
+        const todayStr = new Date().toISOString().split("T")[0];
+        if (cellDateStr === todayStr) {
+          cell.classList.add("today");
+        }
+
+        // Highlight due subscriptions
+        subscriptions.forEach(sub => {
+          if (sub.date === cellDateStr) {
+            cell.classList.add("due");
+          }
+        });
+
+        // Click to show details
+        cell.addEventListener("click", function () {
+          showSubscriptions(cellDateStr);
+        });
+
+        calendarEl.appendChild(cell);
+
+        // Populate daySelect
+        const option = document.createElement("option");
+        option.value = d;
+        option.textContent = d;
+        daySelect.appendChild(option);
+      }
+    }
+
+    function showSubscriptions(dateStr) {
+      subList.innerHTML = "";
+      const subs = subscriptions.filter(sub => sub.date === dateStr);
+      if (subs.length > 0) {
+        subs.forEach(sub => {
+          const li = document.createElement("li");
+          li.textContent = `${sub.name} (Due: ${dateStr})`;
+          subList.appendChild(li);
+        });
+      } else {
+        subList.innerHTML = "<li>No subscriptions due.</li>";
+      }
+    }
+
+    // Jump to today
+    if (todayBtn) {
+      todayBtn.addEventListener("click", function () {
+        const todayDateStr = today.toISOString().split("T")[0];
+        currentMonth = today.getMonth();
+        currentYear = today.getFullYear();
+        buildCalendar(currentMonth, currentYear);
+        showSubscriptions(todayDateStr);
+        daySelect.value = today.getDate();
+      });
+    }
+
+    // Day dropdown change
+    if (daySelect) {
+      daySelect.addEventListener("change", function () {
+        const day = parseInt(this.value);
+        const selectedDate = new Date(currentYear, currentMonth, day);
+        const selectedDateStr = selectedDate.toISOString().split("T")[0];
+        showSubscriptions(selectedDateStr);
+      });
+    }
+
+    // Initial render
+    buildCalendar(currentMonth, currentYear);
+  }
+});
