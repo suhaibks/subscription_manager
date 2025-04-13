@@ -30,23 +30,6 @@
 
 ![folderstructure](https://github.com/user-attachments/assets/8a6bb38c-92e1-4f95-949d-3b162da93ad9)
 
-📦 your-project-folder/
-├── assets/
-│   ├── css/style.css
-│   ├── js/script.js
-│   └── images/
-├── config.php
-├── index.php
-├── signup.php
-├── home.php
-├── calendar.php
-├── analysis.php
-├── about.php
-├── contact.php
-├── edit_subscription.php
-├── logout.php
-├── header.php
-└── footer.php
 
 ---
 
