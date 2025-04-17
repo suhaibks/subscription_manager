@@ -88,14 +88,19 @@ CREATE TABLE subscriptions (
 
 3. **Home**
 ![home](https://github.com/user-attachments/assets/ea7f8f8e-687b-4b17-9f13-ad30418b316b)
+![home2](https://github.com/user-attachments/assets/2b7df758-9933-4fa9-9933-9f48998630af)
+![home3](https://github.com/user-attachments/assets/55bbfa8e-02e5-4d01-be62-8725b874836d)
+![home4](https://github.com/user-attachments/assets/c0b9be2b-7338-421c-bc39-4d91dcc2ccfb)
+![home5](https://github.com/user-attachments/assets/a98e95e7-6fd4-49a4-af24-3c37fbe6740f)
 
-4. **Calendar**
+
+5. **Calendar**
 ![calendar](https://github.com/user-attachments/assets/7fb61f60-1101-4446-a024-f34ec8918eca)
 
-5. **Analysis**
+6. **Analysis**
 ![analysis](https://github.com/user-attachments/assets/eaf8d3b5-e07c-42f6-b9ad-ae96d2e9f680)
 
-6. **About**
+7. **About**
 ![about](https://github.com/user-attachments/assets/d90c6719-14da-43e1-8b7e-b325ad948729)
 
 
