@@ -51,26 +51,8 @@
 
 - Visit `http://localhost/phpmyadmin`
 - Create a new database named `subscription_db`
-- Run the following SQL:
+- Run the SQL queries from SQL `Queries.txt` file
 
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) NOT NULL UNIQUE,
-  dob DATE NOT NULL,
-  email VARCHAR(100) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE subscriptions (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT NOT NULL,
-  name VARCHAR(100) NOT NULL,
-  amount DECIMAL(10,2) NOT NULL,
-  renewal_date DATE NOT NULL,
-  recurrence ENUM('Monthly', 'Yearly', 'Weekly') NOT NULL,
-  recurrence_count INT NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
 
 5. **Visit the Project**
 
