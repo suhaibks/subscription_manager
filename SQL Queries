@@ -1,0 +1,40 @@
+Create the Database:
+
+CREATE DATABASE IF NOT EXISTS subscription_db;
+USE subscription_db;
+
+
+Create users Table:
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  dob DATE NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
+
+Create subscriptions Table:
+
+CREATE TABLE IF NOT EXISTS subscriptions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  amount DECIMAL(10,2) NOT NULL,
+  renewal_date DATE NOT NULL,
+  recurrence ENUM('Monthly', 'Yearly', 'Weekly') NOT NULL,
+  recurrence_count INT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+
+Summary
+
+The users table stores account details.
+
+The subscriptions table stores recurring subscription entries linked to each user.
+
+FOREIGN KEY (user_id) links every subscription to a valid user.
+
+ON DELETE CASCADE ensures that if a user is deleted, their subscriptions are too.
