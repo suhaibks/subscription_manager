@@ -2,7 +2,6 @@
 
 **Subscription Manager** is a complete web-based application designed to help users keep track of all their recurring subscriptions in one place. Built with PHP, MySQL, HTML, CSS, and JavaScript — it's clean, responsive, and works 100% offline.
 
----
 
 ## 🔧 Features
 
@@ -14,8 +13,6 @@
 - 📁 Modular Codebase (each page is split for reusability and readability)
 - 💻 Works offline (no external fonts or CDNs)
 
----
-
 ## 🖥️ Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
@@ -23,15 +20,10 @@
 - **Database:** MySQL
 - **Environment:** XAMPP / Apache NetBeans
 
----
-
 ## 📁 Folder Structure
-
 
 ![folderstructure](https://github.com/user-attachments/assets/8a6bb38c-92e1-4f95-949d-3b162da93ad9)
 
-
----
 
 ## 🚀 How to Run This Project Locally
 
@@ -58,7 +50,6 @@
 
 - http://localhost/subscription-manager/
 
----
 
 ## ✨ Screenshots
 
@@ -85,8 +76,6 @@
 7. **About**
 ![about](https://github.com/user-attachments/assets/d90c6719-14da-43e1-8b7e-b325ad948729)
 
-
----
 
 ## 📄 License
 This project is built for learning and academic purposes. Feel free to fork and improve!
