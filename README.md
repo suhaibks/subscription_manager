@@ -60,12 +60,11 @@
 ![login](https://github.com/user-attachments/assets/f15b979f-7596-425d-a3d8-7dca4885efce)
 
 3. **Home**
-![home](https://github.com/user-attachments/assets/ea7f8f8e-687b-4b17-9f13-ad30418b316b)
-![home2](https://github.com/user-attachments/assets/2b7df758-9933-4fa9-9933-9f48998630af)
-![home3](https://github.com/user-attachments/assets/55bbfa8e-02e5-4d01-be62-8725b874836d)
-![home4](https://github.com/user-attachments/assets/c0b9be2b-7338-421c-bc39-4d91dcc2ccfb)
-![home5](https://github.com/user-attachments/assets/a98e95e7-6fd4-49a4-af24-3c37fbe6740f)
-
+![WhatsApp Image 2025-04-24 at 11 42 19 PM](https://github.com/user-attachments/assets/1418c88c-aacc-4a7d-8ec1-9ced04fb8bdb)
+![WhatsApp Image 2025-04-24 at 11 44 31 PM](https://github.com/user-attachments/assets/6673af9b-fd81-44b0-98b1-8980f8608c2b)
+![WhatsApp Image 2025-04-24 at 11 45 24 PM](https://github.com/user-attachments/assets/fec7ce03-dc3d-4d27-8239-129aefdc3f08)
+![WhatsApp Image 2025-04-24 at 11 46 49 PM](https://github.com/user-attachments/assets/af3766c7-0247-4226-8568-da5e4c66c4ad)
+![WhatsApp Image 2025-04-24 at 11 47 01 PM](https://github.com/user-attachments/assets/17a40596-f5eb-4e72-b78c-346890807789)
 
 5. **Calendar**
 ![calendar](https://github.com/user-attachments/assets/7fb61f60-1101-4446-a024-f34ec8918eca)
